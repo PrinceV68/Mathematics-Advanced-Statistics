@@ -6,11 +6,13 @@
 </p>
 
 <p align="center">
+  
 ![Power BI](https://img.shields.io/badge/Power%20BI-Business%20Intelligence-F2C811?logo=powerbi&logoColor=black)
 ![DAX](https://img.shields.io/badge/DAX-Measures-0078D4)
 ![Excel](https://img.shields.io/badge/Excel-Data-217346?logo=microsoftexcel&logoColor=white)
 ![Power Query](https://img.shields.io/badge/Power%20Query-ETL-742774)
 ![Star Schema](https://img.shields.io/badge/Model-Star%20Schema-6A5ACD)
+
 </p>
 
 ---
