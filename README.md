@@ -1,18 +1,16 @@
-# 📊 Sales & Customer Intelligence Dashboard
+# 📊 PR-1 | Expectation Decider
 
 <p align="center">
-  <strong>End-to-End Power BI Business Intelligence Project</strong><br>
-  Transforming raw sales data into interactive, decision-ready insights.
+  <strong>Probability & Statistics Project — Student Performance Analysis</strong><br>
+  Using probability, random variables, binomial distribution, Venn diagrams, contingency tables, conditional probability, independence, and Bayes theorem.
 </p>
 
 <p align="center">
-  
-![Power BI](https://img.shields.io/badge/Power%20BI-Business%20Intelligence-F2C811?logo=powerbi&logoColor=black)
-![DAX](https://img.shields.io/badge/DAX-Measures-0078D4)
-![Excel](https://img.shields.io/badge/Excel-Data-217346?logo=microsoftexcel&logoColor=white)
-![Power Query](https://img.shields.io/badge/Power%20Query-ETL-742774)
-![Star Schema](https://img.shields.io/badge/Model-Star%20Schema-6A5ACD)
-
+  <img src="https://img.shields.io/badge/Python-Data%20Analysis-3776AB?logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/Pandas-Data-150458?logo=pandas&logoColor=white">
+  <img src="https://img.shields.io/badge/NumPy-Statistics-013243?logo=numpy&logoColor=white">
+  <img src="https://img.shields.io/badge/Matplotlib-Visualization-11557C">
+  <img src="https://img.shields.io/badge/Probability-Statistics-6A5ACD">
 </p>
 
 ---
@@ -23,19 +21,19 @@
 <summary><strong>Click to explore the project</strong></summary>
 
 - [📌 Overview](#-overview)
-- [✨ Features](#-features)
-- [📂 Dataset](#-dataset)
-- [🏗️ Data Model](#️-data-model)
-- [📊 Dashboard Pages](#-dashboard-pages)
-- [📈 KPI Framework](#-key-kpis)
-- [🧮 DAX Measures](#-dax-measures)
-- [🛠️ Tools & Technologies](#️-tools--technologies)
-- [🖼️ Dashboard Preview](#️-dashboard-preview)
-- [📁 Project Structure](#-project-structure)
+- [📂 Project Files](#-project-files)
+- [📊 Dataset](#-dataset)
+- [🎯 Project Objectives](#-project-objectives)
+- [🧠 Probability Basics](#-probability-basics)
+- [🎲 Random Variable & Binomial Distribution](#-random-variable--binomial-distribution)
+- [⭕ Venn Diagram Analysis](#-venn-diagram-analysis)
+- [📋 Contingency Table](#-contingency-table)
+- [🔗 Independence](#-independence)
+- [🧮 Bayes Theorem](#-bayes-theorem)
+- [📈 Key Results](#-key-results)
+- [📝 Project Notes](#-project-notes)
 - [🚀 How to Run](#-how-to-run)
-- [💡 Business Insights](#-business-insights)
-- [🔮 Future Improvements](#-future-improvements)
-- [👨‍💻 Author](#-author)
+- [💡 Conclusion](#-conclusion)
 
 </details>
 
@@ -43,525 +41,551 @@
 
 ## 📌 Overview
 
-The **Sales & Customer Intelligence Dashboard** is an end-to-end **Power BI Business Intelligence project** that transforms raw sales data into meaningful business insights.
+**Expectation Decider** is a probability and statistics project focused on student examination outcomes.
 
-The project combines:
+The project uses a student dataset to demonstrate how probability can be applied to questions such as:
 
-- Professional **data modeling**
-- **DAX** calculations
-- **Power Query** data preparation
-- Interactive **Power BI visualizations**
-- Executive-level **KPIs**
-- Customer and product analysis
-- Regional performance analysis
-- Return analysis
-- Time-intelligence calculations
+- What is the probability that a student passes?
+- What is the probability that attendance is above 80%?
+- How does group-discussion participation relate to passing?
+- How many students out of 3 selected students are expected to pass?
+- Are two student-performance events independent?
+- How can Bayes theorem be used to estimate the probability of passing given high attendance?
 
-> 🎯 **Goal:** provide a single interactive environment for understanding sales performance, customer behavior, regional trends, product performance, and returns.
+The uploaded notebook contains the computational workflow, while the uploaded handwritten notes document the mathematical reasoning and results.
 
 ---
 
-## ✨ Features
+# 📂 Project Files
 
-| Feature | Purpose |
+| File | Purpose |
 |---|---|
-| ⭐ Star Schema | Structured and scalable BI data model |
-| 📊 Interactive Dashboard | Explore data using visuals and filters |
-| 📈 Executive KPIs | Monitor important business metrics |
-| 📅 Time Intelligence | Analyze YTD, MTD, YoY and trends |
-| 🎯 Dynamic Slicers | Filter the dashboard interactively |
-| 🔍 Cross Filtering | Explore relationships between visuals |
-| 📦 Product Analysis | Identify top, bottom and profitable products |
-| 👥 Customer Insights | Understand customer behavior and sales |
-| 🌍 Regional Analysis | Compare regional performance |
-| 🔄 Return Analysis | Monitor returned orders and return rate |
-| ⚡ Optimized DAX | Reusable analytical measures |
-
----
-
-# 📂 Dataset
-
-The dashboard uses multiple related tables following a **Star Schema**.
+| `PR1_Expectation_Decider(1).ipynb` | Main Python/Jupyter Notebook |
+| `expectation_decider_dataset(1).csv` | Student dataset used for analysis |
+| `Notes.pdf` | Six-page handwritten project notes and mathematical working |
+| `README.md` | Interactive project documentation |
 
 <details>
-<summary><strong>📋 View all tables</strong></summary>
+<summary><strong>📖 What is inside Notes.pdf?</strong></summary>
 
-| Table | Description |
-|---|---|
-| `Sales_Fact` | Sales transactions |
-| `Customer_Dim` | Customer information |
-| `Product_Dim` | Product details |
-| `Region_Dim` | Regional information |
-| `Date_Dim` | Calendar/date table |
-| `Returns_Fact` | Return records |
+The six-page notes cover:
+
+- Probability definition and formula
+- Key probability terms
+- Empirical and theoretical probability
+- Random variable
+- Binomial probability distribution
+- Mean and variance
+- Venn diagram analysis
+- Contingency table
+- Joint, marginal and conditional probability
+- Independence
+- Bayes theorem
+
+The notes are handwritten and presented across six project pages. fileciteturn2file0L1-L7
 
 </details>
 
 ---
 
-# 🏗️ Data Model
+# 📊 Dataset
 
-The project follows a central fact-table architecture with supporting dimension tables.
+The uploaded CSV contains **200 student records**.
+
+### Dataset columns
+
+| Column | Meaning |
+|---|---|
+| `study_hours` | Student study hours |
+| `attendance` | Attendance percentage |
+| `group_discussion` | Group-discussion participation |
+| `previous_test_score` | Previous test score |
+| `final_exam_pass` | Final examination outcome |
+
+<details>
+<summary><strong>🔎 Dataset snapshot</strong></summary>
+
+| Metric | Value |
+|---|---:|
+| Total students | **200** |
+| Passed | **70** |
+| Failed | **130** |
+| Pass probability | **0.3500 (35.00%)** |
+| Fail probability | **0.6500 (65.00%)** |
+
+</details>
+
+---
+
+# 🎯 Project Objectives
+
+<details open>
+<summary><strong>Expand objectives</strong></summary>
+
+### 1️⃣ Understand Probability
+
+Understand the probability of an event occurring using:
+
+**P(E) = Favorable Outcomes / Total Outcomes**
+
+### 2️⃣ Compare Probability Types
+
+Compare observed/empirical probability with the theoretical probability used in the project.
+
+### 3️⃣ Model a Random Variable
+
+Define `X` as the number of students who pass when **3 students are randomly selected**.
+
+### 4️⃣ Apply Binomial Distribution
+
+Calculate the probability of obtaining 0, 1, 2, or 3 passing students.
+
+### 5️⃣ Analyze Events with a Venn Diagram
+
+Study the relationship between:
+
+- **A:** Students studying more than 10 hours
+- **B:** Students with attendance greater than 80%
+
+### 6️⃣ Analyze a Contingency Table
+
+Study the relationship between group-discussion participation and final-exam outcome.
+
+### 7️⃣ Test Independence
+
+Compare conditional probability with marginal probability.
+
+### 8️⃣ Apply Bayes Theorem
+
+Use high attendance information to estimate the probability of passing.
+
+</details>
+
+---
+
+# 🧠 Probability Basics
+
+The handwritten notes define probability as the chance of an event happening.
+
+### Formula
+
+```text
+P(E) = Favorable Outcome / Total Outcomes
+```
+
+### Key Terms
+
+<details>
+<summary><strong>📚 View definitions</strong></summary>
+
+| Term | Meaning |
+|---|---|
+| **Experiment** | An activity that gives an outcome |
+| **Outcome** | Result of an experiment |
+| **Sample Space** | Set of all possible outcomes |
+| **Event** | A particular outcome/event of interest |
+| **Conditional Probability** | Probability of an event when another event is known |
+
+</details>
+
+---
+
+# 🎲 Random Variable & Binomial Distribution
+
+The project defines:
+
+> **X = number of students who pass when 3 students are randomly selected.**
+
+Therefore:
+
+```text
+X ∈ {0, 1, 2, 3}
+```
+
+Using the uploaded dataset, the observed pass probability is:
+
+```text
+p = 0.3500
+q = 0.6500
+```
+
+### Binomial Formula
+
+```text
+P(X = x) = C(n,x) × pˣ × q⁽ⁿ⁻ˣ⁾
+```
+
+where:
+
+```text
+n = 3
+p = probability of passing
+q = probability of failing
+```
+
+### Distribution from the uploaded dataset
+
+| X | Probability |
+|---:|---:|
+| **0** | **0.274625 (27.46%)** |\n| **1** | **0.443625 (44.36%)** |\n| **2** | **0.238875 (23.89%)** |\n| **3** | **0.042875 (4.29%)** |\n
+### 📐 Mean
+
+```text
+Mean = np
+     = 3 × 0.3500
+     = 1.0500
+```
+
+### 📐 Variance
+
+```text
+Variance = np(1-p)
+         = 0.6825
+```
+
+<details>
+<summary><strong>💡 Interpretation</strong></summary>
+
+The random variable represents the number of successful/pass outcomes among three selected students. The binomial model gives the probability for each possible number of passes.
+
+</details>
+
+---
+
+# ⭕ Venn Diagram Analysis
+
+The project defines two events:
+
+```text
+A = Students who study more than 10 hours
+B = Students whose attendance is greater than 80%
+```
+
+### Dataset-based set breakdown
+
+| Region | Students |
+|---|---:|
+| 🟦 A only | **58** |
+| 🟩 B only | **35** |
+| 🟨 A ∩ B | **32** |
+| ⬜ Neither | **75** |
+
+<details>
+<summary><strong>🔎 Understanding A ∩ B</strong></summary>
+
+The intersection represents students satisfying **both** conditions:
+
+```text
+study_hours > 10
+AND
+attendance > 80
+```
+
+The handwritten notes specifically highlight the overlapping portion as the students satisfying both conditions. fileciteturn2file0L4-L4
+
+</details>
+
+---
+
+# 📋 Contingency Table
+
+The project examines:
+
+```text
+Group Discussion × Final Exam Result
+```
+
+### Dataset table
+
+| Group Discussion | Pass | Fail | Total |
+|---|---:|---:|---:|
+| **Yes** | 39 | 79 | 118 |
+| **No** | 31 | 51 | 82 |
+| **Total** | **70** | **130** | **200** |
+
+---
+
+## 🔢 Joint Probability
+
+The project calculates the probability that a student:
+
+**participates in group discussion AND passes.**
+
+```text
+P(Group Discussion ∩ Pass)
+= 39 / 200
+= 0.1950
+```
+
+---
+
+## 📌 Marginal Probability
+
+The overall probability of passing is:
+
+```text
+P(Pass)
+= 70 / 200
+= 0.3500
+= 35.00%
+```
+
+---
+
+## 🔍 Conditional Probability
+
+The probability of passing **given group-discussion participation** is:
+
+```text
+P(Pass | Group Discussion)
+= 39 / 118
+= 0.3305
+= 33.05%
+```
+
+The handwritten notes also demonstrate this conditional-probability calculation using the contingency table. fileciteturn2file0L5-L5
+
+---
+
+# 🔗 Independence
+
+The project uses conditional probability to examine whether group-discussion participation and passing are independent.
+
+The basic comparison is:
+
+```text
+P(Pass | Group Discussion)
+        vs
+P(Pass)
+```
+
+If the two values are equal, the events are independent under the probability definition being used.
+
+<details>
+<summary><strong>📊 Project interpretation</strong></summary>
+
+The handwritten notes state that the two probabilities are not equal and therefore conclude that the events are **dependent**.
+
+The notes explain that group-discussion participation and passing are not mutually exclusive: a student can participate in group discussion and also pass the exam. fileciteturn2file0L6-L6
+
+</details>
+
+---
+
+# 🧮 Bayes Theorem
+
+The project includes a separate Bayes theorem example based on the probabilities written in the notes.
+
+### Given
+
+```text
+P(High Attendance | Pass) = 0.70
+P(High Attendance | Fail) = 0.40
+P(High Attendance)        = 0.60
+```
+
+Using total probability, the project obtains:
+
+```text
+P(Pass) = 0.6667
+```
+
+Then Bayes theorem is applied:
+
+```text
+P(Pass | High Attendance)
+=
+P(High Attendance | Pass) × P(Pass)
+------------------------------------
+       P(High Attendance)
+```
+
+The final result written in the notes is:
+
+```text
+P(Pass | High Attendance) = 77.78%
+```
+
+The handwritten final page records the Bayes calculation and the resulting **77.78%** probability. fileciteturn2file0L7-L7
+
+<details>
+<summary><strong>⚠️ Important source distinction</strong></summary>
+
+The Bayes section uses the probabilities explicitly written in the handwritten notes. These values should therefore be treated as the **project's Bayes example inputs**, rather than automatically assuming they are the same as the empirical probabilities calculated from the CSV.
+
+</details>
+
+---
+
+# 📈 Key Results
+
+| Analysis | Result |
+|---|---:|
+| 👨‍🎓 Total Students | **200** |
+| ✅ Passed | **70** |
+| ❌ Failed | **130** |
+| 🎯 P(Pass) | **35.00%** |
+| 📚 P(Fail) | **65.00%** |
+| 👥 P(Group Discussion ∩ Pass) | **19.50%** |
+| 🎯 P(Pass \| Group Discussion) | **33.05%** |
+| 🧮 Bayes P(Pass \| High Attendance) | **77.78%** |
+
+---
+
+# 📝 Project Notes
+
+The handwritten **Notes.pdf** contains six pages of project work. fileciteturn2file0L1-L7
+
+<details>
+<summary><strong>📄 Page-by-page contents</strong></summary>
+
+### Page 1
+Probability definition, formula, key terms, dataset examples and empirical probability.
+
+### Page 2
+Empirical/theoretical probability and the random variable/binomial distribution setup.
+
+### Page 3
+Binomial mean and variance followed by Venn diagram analysis.
+
+### Page 4
+Contingency table, joint probability, marginal probability and conditional probability.
+
+### Page 5
+Independence analysis and the beginning of Bayes theorem.
+
+### Page 6
+Completion of the Bayes theorem calculation and the final **77.78%** result.
+
+</details>
+
+---
+
+# 🔄 Project Workflow
 
 ```mermaid
 flowchart TD
-    Date["📅 Date_Dim"] --> Sales["💰 Sales_Fact"]
-    Product["📦 Product_Dim"] --> Sales
-    Customer["👥 Customer_Dim"] --> Sales
-    Region["🌍 Region_Dim"] --> Sales
-    Sales --> Returns["🔄 Returns_Fact"]
+    A["📂 Student Dataset"] --> B["📊 Basic Probability"]
+    B --> C["🎲 Random Variable"]
+    C --> D["📈 Binomial Distribution"]
+    D --> E["⭕ Venn Diagram"]
+    E --> F["📋 Contingency Table"]
+    F --> G["🔍 Conditional Probability"]
+    G --> H["🔗 Independence"]
+    H --> I["🧮 Bayes Theorem"]
+    I --> J["💡 Final Interpretation"]
 ```
 
-<details>
-<summary><strong>🔎 Why this model?</strong></summary>
-
-The Star Schema separates:
-
-- **Fact data** — transactional measurements such as sales and returns.
-- **Dimension data** — descriptive information such as customer, product, region and date.
-
-This structure supports interactive filtering and analytical DAX calculations.
-
-</details>
-
 ---
 
-# 📊 Dashboard Pages
-
-## 🏠 Executive Dashboard
-
-<details>
-<summary><strong>View included analysis</strong></summary>
-
-- 💰 Total Sales
-- 🧾 Total Orders
-- 👥 Total Customers
-- 🔄 Total Returns
-- 📊 Return Rate
-- 📈 Monthly Sales Trend
-- 🌍 Sales by Region
-- 📦 Sales by Category
-- 🏆 Top Products
-
-</details>
-
----
-
-## 👥 Customer Analysis
-
-<details>
-<summary><strong>View included analysis</strong></summary>
-
-- Customer Distribution
-- Customer Segments
-- Top Customers
-- Customer Sales
-- Customer purchasing behavior
-
-</details>
-
----
-
-## 📦 Product Analysis
-
-<details>
-<summary><strong>View included analysis</strong></summary>
-
-- Top Products
-- Bottom Products
-- Product Categories
-- Product Profitability
-
-</details>
-
----
-
-## 🌍 Regional Analysis
-
-<details>
-<summary><strong>View included analysis</strong></summary>
-
-- Region-wise Sales
-- Region-wise Returns
-- Regional Profit
-- Regional Performance
-
-</details>
-
----
-
-## 📅 Time Analysis
-
-<details>
-<summary><strong>View included analysis</strong></summary>
-
-- Monthly Sales
-- Quarterly Sales
-- Yearly Sales
-- YTD Sales
-- MTD Sales
-- YoY Growth
-
-</details>
-
----
-
-# 📈 Key KPIs
-
-| KPI | Business Meaning |
-|---|---|
-| 💰 **Total Sales** | Overall revenue |
-| 🧾 **Total Orders** | Number of orders |
-| 👥 **Total Customers** | Customer count |
-| 📦 **Units Sold** | Quantity sold |
-| 🔄 **Total Returns** | Returned orders |
-| 📊 **Return Rate** | Percentage of returned orders |
-| 💵 **Average Order Value** | Revenue generated per order |
-| 📈 **Sales Growth** | Sales growth over time |
-
-<details>
-<summary><strong>📌 KPI categories</strong></summary>
-
-### Revenue
-Total Sales · Average Order Value · Sales Growth
-
-### Customers
-Total Customers · Customer Sales · Customer Segments
-
-### Products
-Units Sold · Top Products · Product Profitability
-
-### Returns
-Total Returns · Return Rate · Regional Returns
-
-### Time
-YTD · MTD · YoY Growth · Monthly Trends
-
-</details>
-
----
-
-# 🧮 DAX Measures
-
-The dashboard includes analytical measures for sales, customers, orders, returns and time intelligence.
-
-<details>
-<summary><strong>📊 Core Measures</strong></summary>
-
-- Total Sales
-- Total Orders
-- Total Customers
-- Total Units Sold
-- Total Returns
-- Return Rate
-- Average Order Value
-
-</details>
-
-<details>
-<summary><strong>📅 Time Intelligence Measures</strong></summary>
-
-- Sales YTD
-- Sales MTD
-- Previous Year Sales
-- YoY Growth %
-
-</details>
-
-<details>
-<summary><strong>🧠 DAX workflow</strong></summary>
-
-```text
-Raw Data
-   ↓
-Power Query
-   ↓
-Star Schema
-   ↓
-Relationships
-   ↓
-DAX Measures
-   ↓
-Visualizations
-   ↓
-Interactive Dashboard
-```
-
-</details>
-
----
-
-# 🛠️ Tools & Technologies
-
-| Technology | Usage |
-|---|---|
-| **Microsoft Power BI** | Dashboard and visualization |
-| **DAX** | Measures and calculations |
-| **Power Query** | Data transformation |
-| **Microsoft Excel** | Source/data preparation |
-| **Data Modeling** | Relationships and analytical structure |
-| **Star Schema** | BI model architecture |
-
----
-
-# 🖼️ Dashboard Preview
-
-> Place your screenshots inside the `images/` folder using the filenames below.
-
-<details open>
-<summary><strong>🏠 Executive Dashboard</strong></summary>
-
-![Executive Dashboard](images/executive-dashboard.png)
-
-</details>
-
-<details>
-<summary><strong>👥 Customer Analysis</strong></summary>
-
-![Customer Analysis](images/customer-analysis.png)
-
-</details>
-
-<details>
-<summary><strong>📦 Product Analysis</strong></summary>
-
-![Product Analysis](images/product-analysis.png)
-
-</details>
-
-<details>
-<summary><strong>🌍 Regional Analysis</strong></summary>
-
-![Regional Analysis](images/regional-analysis.png)
-
-</details>
-
-<details>
-<summary><strong>📅 Time Analysis</strong></summary>
-
-![Time Analysis](images/time-analysis.png)
-
-</details>
-
----
-
-# 📁 Project Structure
-
-```text
-Sales-Customer-Intelligence-Dashboard/
-│
-├── 📊 Dashboard.pbix
-├── 📗 Dataset.xlsx
-├── 📄 README.md
-│
-├── 🖼️ images/
-│   ├── executive-dashboard.png
-│   ├── customer-analysis.png
-│   ├── product-analysis.png
-│   ├── regional-analysis.png
-│   └── time-analysis.png
-│
-└── 📦 assets/
-```
+# 🛠️ Technologies
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white">
+  <img src="https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white">
+  <img src="https://img.shields.io/badge/Matplotlib-11557C">
+  <img src="https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white">
+</p>
 
 ---
 
 # 🚀 How to Run
 
 <details open>
-<summary><strong>Step 1 — Download the project</strong></summary>
-
-Download or clone the project repository.
+<summary><strong>1️⃣ Install Python dependencies</strong></summary>
 
 ```bash
-git clone <repository-url>
+pip install pandas numpy matplotlib jupyter
 ```
 
 </details>
 
 <details>
-<summary><strong>Step 2 — Open Power BI</strong></summary>
+<summary><strong>2️⃣ Open the notebook</strong></summary>
 
-Open:
+```bash
+jupyter notebook "PR1_Expectation_Decider(1).ipynb"
+```
+
+</details>
+
+<details>
+<summary><strong>3️⃣ Keep the CSV beside the notebook</strong></summary>
 
 ```text
-Dashboard.pbix
+PR1_Expectation_Decider(1).ipynb
+expectation_decider_dataset(1).csv
 ```
-
-using **Microsoft Power BI Desktop**.
 
 </details>
 
 <details>
-<summary><strong>Step 3 — Refresh the data</strong></summary>
+<summary><strong>4️⃣ Run all cells</strong></summary>
 
-If required:
+Run the notebook from top to bottom to reproduce the project's calculations and visualizations.
+
+</details>
+
+---
+
+# 📁 Recommended Repository Structure
 
 ```text
-Home → Refresh
-```
-
-Refresh the source dataset and verify that all relationships and measures load correctly.
-
-</details>
-
-<details>
-<summary><strong>Step 4 — Explore the dashboard</strong></summary>
-
-Use:
-
-- Slicers
-- Filters
-- Cross-highlighting
-- Interactive visuals
-- Time filters
-- Category filters
-- Regional filters
-
-to explore the dashboard.
-
-</details>
-
----
-
-# 💡 Business Insights
-
-The dashboard is designed to answer questions such as:
-
-<details>
-<summary><strong>💰 Sales Performance</strong></summary>
-
-- How are sales performing over time?
-- Which periods generate the most sales?
-- How is current performance compared with previous periods?
-
-</details>
-
-<details>
-<summary><strong>📦 Product Performance</strong></summary>
-
-- Which products perform best?
-- Which products perform poorly?
-- Which categories contribute most to sales?
-- Which products are most profitable?
-
-</details>
-
-<details>
-<summary><strong>👥 Customer Intelligence</strong></summary>
-
-- Who are the top customers?
-- How is customer sales distributed?
-- Which customer segments contribute most?
-
-</details>
-
-<details>
-<summary><strong>🌍 Regional Intelligence</strong></summary>
-
-- Which regions generate the highest sales?
-- Which regions have higher returns?
-- How does regional profitability compare?
-
-</details>
-
-<details>
-<summary><strong>🔄 Return Analysis</strong></summary>
-
-- How many orders are returned?
-- What is the overall return rate?
-- Which regions or products contribute to returns?
-
-</details>
-
----
-
-# 🔮 Future Improvements
-
-The project can be extended with:
-
-| Improvement | Potential Benefit |
-|---|---|
-| 🤖 AI Insights | Automated insight generation |
-| 🔮 Forecasting | Future sales prediction |
-| 🔍 Drill Through Pages | Detailed record-level analysis |
-| 🔖 Bookmarks | Guided dashboard navigation |
-| 📱 Mobile Layout | Better mobile experience |
-| 🔐 Row-Level Security | Controlled user access |
-| ☁️ Power BI Service | Online deployment and sharing |
-
----
-
-# 📌 Project Flow
-
-```mermaid
-flowchart LR
-    A["📥 Raw Sales Data"] --> B["🧹 Power Query"]
-    B --> C["🏗️ Star Schema"]
-    C --> D["🧮 DAX Measures"]
-    D --> E["📊 Power BI Visuals"]
-    E --> F["💡 Business Insights"]
+PR1-Expectation-Decider/
+│
+├── 📓 PR1_Expectation_Decider(1).ipynb
+├── 📊 expectation_decider_dataset(1).csv
+├── 📄 Notes.pdf
+├── 📘 README.md
+│
+└── 🖼️ images/
+    └── project-preview.png
 ```
 
 ---
 
-# 🎯 What This Project Demonstrates
+# 💡 Conclusion
 
-<details open>
-<summary><strong>Click to expand</strong></summary>
+The **Expectation Decider** project demonstrates how probability and statistics can be applied to student-performance data.
 
-### Data Engineering
-- Data preparation
-- Power Query transformation
-- Fact/dimension organization
-- Relationship design
+The project progresses from basic probability to more advanced concepts:
 
-### Data Modeling
-- Star Schema
-- Dimension tables
-- Fact tables
-- Calendar table
+```text
+Probability
+     ↓
+Empirical / Theoretical Probability
+     ↓
+Random Variable
+     ↓
+Binomial Distribution
+     ↓
+Venn Diagram
+     ↓
+Contingency Table
+     ↓
+Conditional Probability
+     ↓
+Independence
+     ↓
+Bayes Theorem
+```
 
-### Analytics
-- KPI development
-- DAX measures
-- Time intelligence
-- Return analysis
-- Customer analysis
-
-### Business Intelligence
-- Interactive dashboards
-- Cross filtering
-- Slicers
-- Executive reporting
-- Business insight generation
-
-</details>
-
----
-
-# 👨‍💻 Author
-
-**Prince**
-
-AI & Data Science Student
-
-`Power BI` · `SQL` · `Excel` · `Python`
-
----
-
-# ⭐ Support
-
-If you found this project useful, consider giving the repository a ⭐ on GitHub.
-
-It helps support future data analytics and Power BI projects.
+The uploaded dataset provides the empirical student-performance analysis, while the handwritten notes provide the mathematical explanation and project calculations.
 
 ---
 
 <p align="center">
 
-**📊 Sales & Customer Intelligence Dashboard**
+<strong>📊 PR-1 | EXPECTATION DECIDER</strong><br>
 
-*Turning data into decisions.*
+<em>Probability • Statistics • Data Analysis • Python</em>
 
 </p>
+# 👨‍💻 Author
+
+## Prince Vaghasiya ##
+
+AI & Data Science Student
+
+`Python` · `Pandas` · `NumPy` · `Statistics`
