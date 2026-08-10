@@ -1,55 +1,162 @@
-# 📊 PR. 2 – Derivable Judgement
+# 📊 PR-2 | Derivable Judgement
 
-> **Mathematics & Advanced Statistics**  
-> Statistical analysis and hypothesis testing using Python.
+<p align="center">
+  <strong>Mathematics & Advanced Statistics Project — Statistical Decision Making</strong><br>
+  Using inferential statistics, hypothesis testing, confidence intervals, p-values, critical values, t-test, chi-square test, ANOVA, covariance, and correlation.
+</p>
 
-**Author:** Prince Vaghasiya
-
----
-
-## 📌 About the Project
-
-This project applies **inferential statistics** to a synthetic health-record dataset. It combines the theoretical concepts from Part A with practical statistical analysis in Python.
-
-The main focus is on using sample data to make statistical decisions through **confidence intervals, hypothesis testing, p-values, critical values, t-test, chi-square test, ANOVA, covariance and correlation**.
-
----
-
-## 🎯 Objectives
-
-- Understand inferential statistics and hypothesis testing.
-- Formulate null and alternative hypotheses.
-- Calculate a confidence interval.
-- Use p-values and critical values for statistical decisions.
-- Perform t-test, chi-square test and ANOVA.
-- Calculate covariance and correlation.
-- Visualize and interpret the results.
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-Data%20Analysis-3776AB?logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/Pandas-Data-150458?logo=pandas&logoColor=white">
+  <img src="https://img.shields.io/badge/NumPy-Statistics-013243?logo=numpy&logoColor=white">
+  <img src="https://img.shields.io/badge/SciPy-Statistics-8CAAE6?logo=scipy&logoColor=white">
+  <img src="https://img.shields.io/badge/Matplotlib-Visualization-11557C">
+  <img src="https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white">
+</p>
 
 ---
 
-## 📖 Part A – Theoretical Foundation
+## 🧭 Quick Navigation
 
-The theory section covers the eight topics required in the assignment:
+<details open>
+<summary><strong>Click to explore the project</strong></summary>
 
-1. **Inferential Statistics**
-2. **Hypothesis Testing and its Components**
-3. **Confidence Interval and Critical Value**
-4. **p-value**
-5. **Type I and Type II Errors**
-6. **z-test, t-test, Chi-square Test and ANOVA**
-7. **Covariance**
-8. **Correlation**
+- [📌 Overview](#-overview)
+- [📂 Project Files](#-project-files)
+- [🎯 Objectives](#-objectives)
+- [📖 Part A — Theory](#-part-a--theory)
+- [🧪 Part B — Practical Analysis](#-part-b--practical-analysis)
+- [🗃️ Dataset](#️-dataset)
+- [🧠 Hypotheses](#-hypotheses)
+- [📐 Statistical Methods](#-statistical-methods)
+- [📊 Visual Results](#-visual-results)
+- [🔄 Project Workflow](#-project-workflow)
+- [🚀 How to Run](#-how-to-run)
+- [📁 Repository Structure](#-repository-structure)
+- [💡 Conclusion](#-conclusion)
+- [👨‍💻 Author](#-author)
 
-The handwritten theory pages are included in the repository under `screenshots/`.
+</details>
+
+---
+
+## 📌 Overview
+
+**Derivable Judgement** is a Mathematics & Advanced Statistics project focused on using sample data to make statistical decisions.
+
+The project connects the concepts written in the theory section with a Python-based practical analysis. The practical uses a synthetically generated health-record dataset and demonstrates how different statistical tests are selected according to the type of data and the question being asked.
+
+The project covers:
+
+- Inferential statistics
+- Hypothesis testing
+- Confidence intervals
+- Critical values
+- p-values
+- Type I and Type II errors
+- z-test and t-test concepts
+- Chi-square test
+- ANOVA
+- Covariance
+- Correlation
+- Data visualization
+
+The repository contains the notebook, dataset, theory screenshots, and practical result screenshots.
+
+---
+
+# 📂 Project Files
+
+| File / Folder | Purpose |
+|---|---|
+| `PR2_PartB_Derivable_Judgement_Humanized.ipynb` | Main Python/Jupyter practical |
+| `health_records_dataset.csv` | Generated health-record dataset |
+| `screenshots/` | Theory and practical screenshots |
+| `README.md` | Interactive project documentation |
 
 <details>
-<summary>📖 View Theory Screenshots</summary>
+<summary><strong>📖 What is included in the screenshots?</strong></summary>
 
-### Theory – Page 1
+The repository contains **2 theory screenshots** showing the handwritten Part A work and **3 practical screenshots** showing the statistical visualizations.
 
-![Theory Page 1](<img width="1200" height="1600" alt="Image 1" src="https://github.com/user-attachments/assets/42e956f5-2a36-4094-b38e-5e81a22e05ff" />)
+The five screenshots are kept in the repository so the project documentation and practical work can be viewed directly from GitHub.
 
-### Theory – Page 2
+</details>
+
+---
+
+# 🎯 Objectives
+
+<details open>
+<summary><strong>Expand objectives</strong></summary>
+
+### 1️⃣ Understand Inferential Statistics
+
+Use sample information to understand how conclusions can be made about a population.
+
+### 2️⃣ Formulate Hypotheses
+
+Create:
+
+- **Null Hypothesis (H₀)**
+- **Alternative Hypothesis (H₁)**
+
+### 3️⃣ Apply Statistical Testing
+
+Use suitable statistical tests for numerical and categorical variables.
+
+### 4️⃣ Calculate Confidence Intervals
+
+Estimate a population parameter using a specified confidence level.
+
+### 5️⃣ Interpret p-values and Critical Values
+
+Use a 5% significance level to make statistical decisions.
+
+### 6️⃣ Study Relationships
+
+Use covariance and correlation to understand relationships between numerical variables.
+
+### 7️⃣ Present Results
+
+Use charts and short interpretations to communicate the findings.
+
+</details>
+
+---
+
+# 📖 Part A — Theory
+
+The handwritten theory section contains the eight required conceptual topics.
+
+<details>
+<summary><strong>📚 View the eight topics</strong></summary>
+
+| No. | Topic |
+|---:|---|
+| 1 | Inferential Statistics |
+| 2 | Hypothesis Testing and its Components |
+| 3 | Confidence Interval and Critical Value |
+| 4 | p-value |
+| 5 | Type I and Type II Errors |
+| 6 | z-test, t-test, Chi-square Test and ANOVA |
+| 7 | Covariance |
+| 8 | Correlation |
+
+The theory explains the basic ideas needed before performing the practical statistical analysis.
+
+</details>
+
+### 📸 Theory Screenshots
+
+<details>
+<summary><strong>View handwritten theory pages</strong></summary>
+
+### Theory — Page 1
+
+![Theory Page 1](screenshots/theory-page-1.jpeg)
+
+### Theory — Page 2
 
 ![Theory Page 2](screenshots/theory-page-2.jpeg)
 
@@ -57,35 +164,69 @@ The handwritten theory pages are included in the repository under `screenshots/`
 
 ---
 
-## 🧪 Part B – Practical Analysis
+# 🧪 Part B — Practical Analysis
 
-The practical uses a **synthetically generated dataset of 1,000 health records**.
+The practical section uses Python to generate and analyze a health-record dataset.
 
-### Dataset Variables
+The notebook follows this general sequence:
 
-| Variable | Description |
+```text
+Generate Dataset
+      ↓
+Inspect Data
+      ↓
+Formulate Hypotheses
+      ↓
+Confidence Interval
+      ↓
+t-test
+      ↓
+Chi-square Test
+      ↓
+ANOVA
+      ↓
+Covariance & Correlation
+      ↓
+p-value / Critical Value
+      ↓
+Statistical Decision
+      ↓
+Visualization & Interpretation
+```
+
+---
+
+# 🗃️ Dataset
+
+The practical generates **1,000 synthetic health records**.
+
+### Dataset Columns
+
+| Column | Description |
 |---|---|
-| `record_id` | Unique record ID |
+| `record_id` | Unique record identifier |
 | `age_group` | Age category |
 | `age` | Age |
-| `weight` | Weight |
+| `weight` | Weight in kg |
 | `gender` | Gender |
 | `region` | Region |
 | `smoking_status` | Smoking category |
 | `exercise_frequency` | Exercise frequency |
 | `bmi` | Body Mass Index |
 | `blood_pressure` | Blood pressure |
-| `diabetes` | Diabetes indicator |
-| `hypertension` | Hypertension indicator |
-| `cholesterol_level` | Cholesterol level |
-| `glucose_level` | Glucose level |
-| `visit_date` | Visit date |
+| `diabetes` | Diabetes status |
+| `hypertension` | Hypertension status |
+| `cholesterol_level` | Cholesterol measurement |
+| `glucose_level` | Glucose measurement |
+| `visit_date` | Health visit date |
+
+The dataset is generated for educational purposes and does not represent real patient records.
 
 ---
 
-## 🧠 Hypotheses
+# 🧠 Hypotheses
 
-### 1. Smoking Status vs Diabetes
+## 1️⃣ Smoking Status vs Diabetes
 
 **H₀:** Smoking status has no significant association with diabetes.
 
@@ -93,7 +234,9 @@ The practical uses a **synthetically generated dataset of 1,000 health records**
 
 **Test:** Chi-square test of independence.
 
-### 2. Age Groups vs Diabetes
+---
+
+## 2️⃣ Age Groups vs Diabetes
 
 **H₀:** There is no significant difference in diabetes rate among age groups.
 
@@ -101,7 +244,9 @@ The practical uses a **synthetically generated dataset of 1,000 health records**
 
 **Test:** One-way ANOVA.
 
-### 3. BMI of Smokers vs Non-Smokers
+---
+
+## 3️⃣ BMI of Smokers vs Non-Smokers
 
 **H₀:** Mean BMI is equal for smokers and non-smokers.
 
@@ -111,122 +256,145 @@ The practical uses a **synthetically generated dataset of 1,000 health records**
 
 ---
 
-## 📐 Statistical Methods
+# 📐 Statistical Methods
 
 | Method | Purpose |
 |---|---|
-| **95% Confidence Interval** | Estimate mean age |
-| **Welch t-test** | Compare BMI between two groups |
-| **Chi-square Test** | Test smoking status and diabetes association |
-| **ANOVA** | Compare diabetes rates across age groups |
-| **Covariance** | Study direction of co-movement |
-| **Correlation** | Measure strength and direction of linear relationship |
+| **95% Confidence Interval** | Estimate the mean age |
+| **Welch t-test** | Compare BMI between smokers and non-smokers |
+| **Chi-square Test** | Examine smoking status vs diabetes |
+| **One-way ANOVA** | Compare diabetes rates across age groups |
+| **Covariance** | Measure direction of co-movement between age and BMI |
+| **Pearson Correlation** | Measure strength and direction of linear relationship |
 
----
-
-## ⚖️ Decision Rule
-
-The practical uses a **5% significance level**:
+### ⚖️ Significance Level
 
 ```text
 α = 0.05
 ```
 
-The main rule is:
+### Decision Rule
 
 ```text
 p-value < 0.05  →  Reject H₀
 p-value ≥ 0.05  →  Fail to reject H₀
 ```
 
-Critical values are also calculated where applicable and compared with the test statistic.
+For applicable tests, the calculated test statistic is also compared with its critical value.
 
 ---
 
-## 📊 Visualizations
+# 📊 Visual Results
 
-The practical contains three main graphs.
+## Practical Screenshot 1
+<p align="center">
+  <img width="630" height="470" 
+       alt="output 3" 
+       src="https://github.com/user-attachments/assets/0f32ff17-2c2f-4fc7-bbdd-21f6de7000af" />
 
-### Diabetes Rate by Age Group
+</p>
 
-This graph compares the diabetes rate across different age groups.
+## Practical Screenshot 2
+<p align="center">
+  <img width="630" height="470" 
+       alt="output 2" 
+       src="https://github.com/user-attachments/assets/fef4daf1-432e-49af-a905-9915163c93ca" />
+">
+</p>
 
-![Diabetes Rate by Age Group](screenshots/practical-page-1.png)
+## Practical Screenshot 3
 
-### Smoking Status vs Diabetes
-
-This graph shows the number of diabetes and non-diabetes records for each smoking-status group.
-
-![Smoking Status vs Diabetes](screenshots/practical-page-2.png)
-
-### Age vs BMI
-
-This scatter plot shows the relationship between age and BMI.
-
-![Age vs BMI](screenshots/practical-page-3.png)
+<p align="center">
+  <img width="630" height="470"
+       alt="Diabetes Rate by Age Group"
+       src="https://github.com/user-attachments/assets/211bc38e-8211-4c7b-ac53-07be830452ae">
+</p>
+</details>
 
 ---
 
-## 🛠️ Technologies Used
+# 🔄 Project Workflow
 
-- **Python**
-- **Jupyter Notebook**
-- **NumPy**
-- **Pandas**
-- **SciPy**
-- **Matplotlib**
-
-### Libraries
-
-```python
-import numpy as np
-import pandas as pd
-from scipy import stats
-import matplotlib.pyplot as plt
+```mermaid
+flowchart TD
+    A["📂 Health Dataset"] --> B["📊 Data Preparation"]
+    B --> C["🧠 Hypothesis Formulation"]
+    C --> D["📏 Confidence Interval"]
+    D --> E["🧪 Statistical Tests"]
+    E --> F["📐 t-test"]
+    E --> G["📋 Chi-square"]
+    E --> H["📈 ANOVA"]
+    F --> I["🔍 Statistical Decision"]
+    G --> I
+    H --> I
+    I --> J["↔️ Covariance & Correlation"]
+    J --> K["📊 Visualizations"]
+    K --> L["💡 Final Judgement"]
 ```
 
 ---
 
-## ▶️ How to Run
+# 🛠️ Technologies
 
-### 1. Install Python
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white">
+  <img src="https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white">
+  <img src="https://img.shields.io/badge/SciPy-8CAAE6?logo=scipy&logoColor=white">
+  <img src="https://img.shields.io/badge/Matplotlib-11557C">
+  <img src="https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white">
+</p>
 
-Make sure Python 3.x is installed.
+---
 
-### 2. Install the required libraries
+# 🚀 How to Run
+
+<details open>
+<summary><strong>1️⃣ Install dependencies</strong></summary>
 
 ```bash
 pip install numpy pandas scipy matplotlib jupyter
 ```
 
-### 3. Open Jupyter Notebook
+</details>
+
+<details>
+<summary><strong>2️⃣ Open Jupyter Notebook</strong></summary>
 
 ```bash
 jupyter notebook
 ```
 
-### 4. Open the notebook
+</details>
+
+<details>
+<summary><strong>3️⃣ Open the practical notebook</strong></summary>
 
 ```text
 PR2_PartB_Derivable_Judgement_Humanized.ipynb
 ```
 
-Run the cells from top to bottom.
+</details>
 
-The notebook generates the health dataset and performs all the statistical calculations.
+<details>
+<summary><strong>4️⃣ Run all cells</strong></summary>
+
+Run the notebook from top to bottom. It will generate the dataset, perform the statistical tests and display the visualizations.
+
+</details>
 
 ---
 
-## 📂 Project Structure
+# 📁 Repository Structure
 
 ```text
 PR-2-Derivable-Judgement/
 │
-├── README.md
-├── PR2_PartB_Derivable_Judgement_Humanized.ipynb
-├── health_records_dataset.csv
+├── 📘 README.md
+├── 📓 PR2_PartB_Derivable_Judgement_Humanized.ipynb
+├── 📊 health_records_dataset.csv
 │
-└── screenshots/
+└── 🖼️ screenshots/
     ├── theory-page-1.jpeg
     ├── theory-page-2.jpeg
     ├── practical-page-1.png
@@ -236,68 +404,55 @@ PR-2-Derivable-Judgement/
 
 ---
 
-## 📈 Analysis Flow
-
-```text
-Health Dataset
-      ↓
-Data Generation
-      ↓
-Hypothesis Formulation
-      ↓
-Confidence Interval
-      ↓
-t-test / Chi-square / ANOVA
-      ↓
-Covariance & Correlation
-      ↓
-p-value & Critical Value
-      ↓
-Statistical Decision
-      ↓
-Interpretation
-```
-
----
-
-## 🎓 Learning Outcomes
+# 🎓 Learning Outcomes
 
 Through this project, I practiced:
 
-- Working with statistical data in Python.
-- Formulating hypotheses.
-- Understanding p-values and significance levels.
+- Understanding inferential statistics.
+- Formulating H₀ and H₁.
+- Choosing statistical tests according to the data.
 - Calculating confidence intervals.
-- Performing common statistical tests.
-- Interpreting statistical results.
-- Using graphs to understand data.
-- Applying mathematics and statistics concepts to a practical dataset.
+- Understanding p-values and critical values.
+- Performing t-tests.
+- Performing chi-square tests.
+- Performing ANOVA.
+- Calculating covariance and correlation.
+- Creating statistical visualizations.
+- Interpreting results and making statistical decisions.
 
 ---
 
-## ⚠️ Note
+# ⚠️ Project Note
 
-The health dataset used in this project is **synthetically generated for educational purposes**. The results are specific to this dataset and should not be treated as medical conclusions about a real population.
+The health dataset in this project is **synthetically generated for educational purposes**.
 
----
+The results are specific to this generated sample and should not be interpreted as medical conclusions about a real population.
 
-## 🏁 Conclusion
-
-This project demonstrates how inferential statistics can be applied to sample data to make structured statistical judgements.
-
-The practical connects the theoretical concepts from Part A with Python-based analysis in Part B and shows how statistical tests, probability values and visualizations can be used to understand data and support decisions.
+Statistical association also does not automatically mean causation.
 
 ---
 
-## 👨‍💻 Author
+# 💡 Conclusion
 
-**Prince Vaghasiya**
+The **Derivable Judgement** project demonstrates how statistical concepts can be applied to a practical dataset.
 
-**PR. 2 – Derivable Judgement**  
-**Mathematics & Advanced Statistics**
+The project starts with the theoretical foundation and then moves to Python-based analysis. Confidence intervals, hypothesis testing, p-values, critical values and statistical tests are used to support the final judgement.
+
+The practical shows how data can be transformed into statistical evidence and how that evidence can be used to make a structured decision.
+
+---
+
+# 👨‍💻 Author
+
+## Prince Vaghasiya
+
+**AI & Data Science Student**
+
+`Python` · `Pandas` · `NumPy` · `SciPy` · `Statistics`
 
 ---
 
 <p align="center">
-  <b>Data → Analysis → Evidence → Statistical Judgement</b>
+  <strong>📊 PR-2 | DERIVABLE JUDGEMENT</strong><br>
+  <em>Statistics • Data Analysis • Hypothesis Testing • Python</em>
 </p>
